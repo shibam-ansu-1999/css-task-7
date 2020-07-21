@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Chase Board</title>
+</head>
+
+<style type="text/css">
+*{
+	margin: 0px;
+	padding: 0px;
+}
+#main{
+	justify-content: center;
+	text-align: center;
+}
+
+#container{
+	display: inline-block;
+	margin: 80px;
+}
+body{
+	background: #43504D;
+}
+
+
+.row1 li{
+	height: 100px;
+	width: 100px;
+	display: inline-block;
+	margin: -1.3px;
+	animation: 1s fade forwards;
+}
+.row2 li{
+	height: 100px;
+	width: 100px;
+	display: inline-block;
+	margin: -1.3px;
+}
+.row1 li:nth-child(even){
+ 	background: black;
+}
+.row2 li:nth-child(odd){
+ 	background: black;
+}
+.row1 li:nth-child(odd){
+ 	background: #DBE6E3;
+}
+.row2 li:nth-child(even){
+ 	background: #DBE6E3;
+}
+.row1 li:hover{
+	animation: 1s fade1 forwards;
+	background: #F0E20A;
+	transform: scale(1.05);
+}
+.row2 li:hover{
+	animation: 1s fade2 forwards;
+	background: #F0E20A;
+	transform: scale(1.05);
+}
+
+@keyframes fade1{
+	from{
+		opacity: 1
+	}
+	to{
+		opacity: 0.5
+	}
+}
+@keyframes fade2{
+	from{
+		opacity: 1
+	}
+	to{
+		opacity: 0.5
+	}
+}
+
+</style>
+
+
+
+
+<body>
+	<div id="main">
+		<div id="container">
+			<div class="row1">
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+			<div class="row2">
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+			<div class="row1">
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+			<div class="row2">
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+			<div class="row1">
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+			<div class="row2">
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+			<div class="row1">
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+			<div class="row2">
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
