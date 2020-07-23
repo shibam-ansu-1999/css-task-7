@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Chase Board</title>
+	<title>Chess Board</title>
 </head>
 
 <style type="text/css">
@@ -15,27 +15,57 @@
 	text-align: center;
 }
 
+#main h2{
+	color: white;
+	margin-top: 30px;
+	font-size: 30px;
+	animation: glow 1s forwards;
+	animation-iteration-count: infinite;
+}
+@keyframes glow{
+	0%{
+		color: #F7FA00;
+	}
+	25%{
+		color: #B6FA00;
+	}
+	50%{
+		color: #4CFA00;
+	}
+	75%{
+		color: #F45100;
+	}
+	100%{
+		color: #00FF1B;
+	}
+}
+
 #container{
 	display: inline-block;
 	margin: 80px;
+	margin-top: 40px;
+	padding: 2px;
+	border: 6px solid #FA7914;
 }
 body{
-	background: #43504D;
+	background:url(https://wallpaperplay.com/walls/full/0/4/2/392560.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 
 .row1 li{
-	height: 100px;
-	width: 100px;
+	height: 60px;
+	width: 60px;
 	display: inline-block;
-	margin: -1.3px;
+	margin: -2px;
 	animation: 1s fade forwards;
 }
 .row2 li{
-	height: 100px;
-	width: 100px;
+	height: 60px;
+	width: 60px;
 	display: inline-block;
-	margin: -1.3px;
+	margin: -2px;
 }
 .row1 li:nth-child(even){
  	background: black;
@@ -84,6 +114,7 @@ body{
 
 <body>
 	<div id="main">
+		<h2>Let's play a game</h2>
 		<div id="container">
 			<div class="row1">
 				<ul>
@@ -169,7 +200,7 @@ body{
 					<li></li>
 				</ul>
 			</div>
-			<div class="row2">
+			<div class="row2" style="margin-bottom: -4px;">
 				<ul>
 					<li></li>
 					<li></li>
